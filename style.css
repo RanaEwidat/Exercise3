@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e4d6de;
+}
+
+header {
+    /*header Section */
+    background-color: #c774bc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+    color: #d1cbcb;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    margin-top: 5px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: yellow;
+}
+
+
+/* About Me Section */
+.about-me {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about-me h2 {
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.profile-imgs {
+    /*img1 style*/
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.image-position {
+    text-align: center;
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./imgs/img2.jpg');
+    /*img2 style*/
+    background-size: cover;
+}
+
+.skills h2 {
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(221, 189, 217, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skills-list span {
+    background-color: #c774bc;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.skills-list span:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects h2 {
+    padding-bottom: 5px;
+}
+
+.project-card {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+    color: #695969;
+}
+
+.project-card:nth-of-type(1) {
+    background-color: #e9b7d0;
+    position: absolute;
+    top: 320px;
+    left: 10%;
+    z-index: 10;
+}
+
+.project-card:nth-of-type(2) {
+    background-color: #f0f790;
+}
+
+.project-card:nth-of-type(3) {
+    background-color: #ccccff;
+    margin-bottom: 0;
+}
+
+.project-card:nth-of-type(4) {
+    background-color: #7ae4a6;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact h2 {
+
+    padding-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #bebdbe;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+
+form input:focus,
+form textarea:focus {
+    border-color: #7b0a9e;
+    outline: none;
+}
+
+
+form button {
+    width: 10%;
+    padding: 10px;
+    background-color: #c1acc7;
+    color: white;
+    border: 2px solid #7b0a9e;
+
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #7b0a9e;
+}
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #c774bc;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/*button back to the top of page style*/
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 45px;
+    width: 45px;
+    background-color: #7b0a9e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+}
